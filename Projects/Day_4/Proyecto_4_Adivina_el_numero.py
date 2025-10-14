@@ -2,7 +2,7 @@
 
 from random import *
 
-numero_random = randint(1,101)
+numero_random = randint(1,100)
 
 print("\n")
 nombre = input("¿Cuál es tu nombre?  ")
