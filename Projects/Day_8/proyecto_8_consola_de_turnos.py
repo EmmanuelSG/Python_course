@@ -22,8 +22,18 @@ def menu_opciones(menu):
     _(3)_ Turno para cosmetica
     _(4)_ Salir
 \n""")
-    menu = int(input("->"))
+    
+    while True:
+        try:
+            menu = int(input(f"->  "))
+            [1,2,3,4].index(menu)
+        except ValueError:
+            print("Entrada inválida. Por favor, ingresa una opcion valida.")
+        else:
+            break
+
     return menu
+
 
 def entrada_opciones(valor_esperado, variable):
     while True:
